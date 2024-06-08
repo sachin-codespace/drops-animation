@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #161513;
+    
+}
+
+.drop {
+    background-color: #f1c40f;
+    height: 1.3vw;
+    width: 1.3vw;
+    border-radius: 1vw;
+    border: .1vw solid #00ff00;
+    position: absolute;
+    animation: animate 5s linear;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        /* transform: scale(2); */
+    }
+
+    25% {
+        opacity: .8;
+        transform: scale(2);
+        /* border-radius: 25%; */
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(2.4);
+        border-radius: 50%;
+        background-color: #016f93;
+    }
+
+    100% {
+        opacity: .3;
+        transform: scale(1);
+        border-radius: 100%;
+        background-color: linear-gradient(267deg, #da7c25 .36%, #b923e1 102.06%);
+    }
+}
